@@ -25,6 +25,9 @@ namespace ITEvents
                     case "CreateList":
                         CreateEventList(splittedInput[1]);
                         break;
+                    case "Info":
+                        EventListInfo(splittedInput[1]);
+                        break;
                     default:
                         Console.WriteLine("invalid command!");
                         break;
@@ -68,6 +71,16 @@ namespace ITEvents
                 Console.WriteLine(ex.Message);
 
             }
+        }
+        private static void EventListInfo(string name)
+        {
+            if (!eventsList.ContainsKey(name))
+            {
+                Console.WriteLine($"Could not get list {name}.");
+                return;
+            }
+            EventList eventList = eventsList[name];
+            Console.WriteLine(eventList.ToString());
         }
     }
 }

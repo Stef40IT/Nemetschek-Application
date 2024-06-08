@@ -33,6 +33,18 @@ namespace ITEvents
             if(events == null) return;
             this._events.Add(events);
         }
-        
+
+
+        public override string ToString()
+        {
+            if (this._events.Count == 0) return $"The list {this.Name} has no available events.";
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"List {this.Name} has {this._events.Count} event/s:");
+            foreach (var events in this._events)
+                sb.AppendLine(events.ToString());
+
+            return sb.ToString().Trim();
+        }
     }
 }
