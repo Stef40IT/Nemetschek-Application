@@ -114,7 +114,8 @@ namespace ITEvents
                 return;
             }
             EventList eventList = eventsList[name];
-            Console.WriteLine(eventList.FilterPlace(place).ToString());
+            List<string> filteredList = eventList.FilterPlace(place);
+            Console.WriteLine(filteredList.ToString());
         }
         private static void EventListInfo(string name)
         {

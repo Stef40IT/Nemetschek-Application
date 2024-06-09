@@ -43,7 +43,7 @@ namespace ITEvents
             this._events.Sort((x, y) => string.Compare(y.EventName, x.EventName));
             return this._events;
         }
-        public List<Event> FilterPlace(string place) => this._events.Where(x => x.EventPlace == place).ToList();
+        public List<string> FilterPlace(string place) => this._events.Where(x => x.EventPlace == place).Select(x => x.EventName).ToList();
         public override string ToString()
         {
             if (this._events.Count == 0) return $"The list {this.Name} has no available events.";
