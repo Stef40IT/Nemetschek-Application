@@ -25,6 +25,15 @@ namespace ITEvents
                     case "CreateList":
                         CreateEventList(splittedInput[1]);
                         break;
+                    case "SortName":
+                        SortAscendingByName(splittedInput[1]);
+                        break;
+                    case "SortNameDescending":
+                        SortDescendingByName(splittedInput[1]);
+                        break;
+                    case "FilterPlace":
+                        FilterPlace(splittedInput[1], splittedInput[2]);
+                        break;
                     case "Info":
                         EventListInfo(splittedInput[1]);
                         break;
@@ -33,7 +42,12 @@ namespace ITEvents
                         break;
                 }
                 Console.WriteLine("Use one of the following commands: ");
-                Console.WriteLine("    AddEvent(to add a new event to your list with events)");
+                Console.WriteLine("    AddEvent(name, place, date, type, lectors(Firstname_Lastname), event list)");
+                Console.WriteLine("    SortName(event list)");
+                Console.WriteLine("    SortNameDescending(event list)");
+                Console.WriteLine("    FilterPlace(event list, place)");
+                Console.WriteLine("    Info(event list)");
+
 
             }
         }
@@ -71,6 +85,36 @@ namespace ITEvents
                 Console.WriteLine(ex.Message);
 
             }
+        }
+        private static void SortAscendingByName(string name)
+        {
+            if (!eventsList.ContainsKey(name))
+            {
+                Console.WriteLine($"Could not get list {name}.");
+                return;
+            }
+            EventList eventList = eventsList[name];
+            Console.WriteLine(eventList.SortAscendingByName().ToString());
+        }
+        private static void SortDescendingByName(string name)
+        {
+            if (!eventsList.ContainsKey(name))
+            {
+                Console.WriteLine($"Could not get list {name}.");
+                return;
+            }
+            EventList eventList = eventsList[name];
+            Console.WriteLine(eventList.SortDescendingByName().ToString());
+        }
+        private static void FilterPlace(string name, string place)
+        {
+            if (!eventsList.ContainsKey(name))
+            {
+                Console.WriteLine($"Could not get list {name}.");
+                return;
+            }
+            EventList eventList = eventsList[name];
+            Console.WriteLine(eventList.FilterPlace(place).ToString());
         }
         private static void EventListInfo(string name)
         {

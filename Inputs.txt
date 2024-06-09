@@ -1,0 +1,10 @@
+CreateList Summer
+AddEvent SpeedItUp Varna 01.07.2024 Meeting Ivan_Ivanov Summer
+AddEvent Raise Varna 07.07.2024 Meeting Ivan_Ivanov Summer
+AddEvent Event7 Varna 04.07.2024 Meeting Ivan_Ivanov Summer
+AddEvent Raise Plovdiv 01.07.2024 Meeting Ivan_Ivanov Summer
+AddEvent Event9 Plovdiv 20.07.2024 Meeting Ivan_Ivanov Summer
+AddEvent Event5 Varna 01.07.2024 Meeting Ivan_Ivanov Summer
+AddEvent Raise Varna 01.06.2024 Meeting Ivan_Ivanov Summer
+AddEvent Event3 Plovdiv 01.07.2024 Meeting Ivan_Ivanov Summer
+AddEvent SpeedItUp Varna 01.09.2024 Meeting Ivan_Ivanov Summer

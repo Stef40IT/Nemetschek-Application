@@ -25,7 +25,7 @@ namespace ITEvents
 
         public override string ToString()
         {
-            return $"The {this.EventType} {this.EventName} with lector/s {this.Lectors} will be held in {this.EventPlace} in {this.Date}.";
+            return $"The event {this.EventName} in {this.EventPlace} with date {this.Date} is type {this.EventType} with lector {this.Lectors}";
         }
     }
 }
