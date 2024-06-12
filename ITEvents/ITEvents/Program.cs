@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
 namespace ITEvents
@@ -20,7 +21,7 @@ namespace ITEvents
                 switch (command)
                 {
                     case "AddEvent":
-                        AddEvent(splittedInput[1], splittedInput[2], splittedInput[3], splittedInput[4], splittedInput[5], splittedInput[6]);
+                        AddEvent(splittedInput[1], splittedInput[2], DateTime.Parse(splittedInput[3]), splittedInput[4], splittedInput[5], splittedInput[6]);
                         break;
                     case "CreateList":
                         CreateEventList(splittedInput[1]);
@@ -31,7 +32,7 @@ namespace ITEvents
                     case "SortNameDescending":
                         SortDescendingByName(splittedInput[1]);
                         break;
-                    case "FilterPlace":
+                    case "Filter":
                         FilterPlace(splittedInput[1], splittedInput[2]);
                         break;
                     case "Info":
@@ -50,8 +51,8 @@ namespace ITEvents
 
 
             }
-        }
-        private static void AddEvent(string eventName, string eventPlace, string date, string eventType, string lectors, string eventListName)
+        }   
+        private static void AddEvent(string eventName, string eventPlace, DateTime date, string eventType, string lectors, string eventListName)
         {
             try
             {
