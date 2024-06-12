@@ -32,7 +32,7 @@ namespace ITEvents
                     case "SortNameDescending":
                         SortDescendingByName(splittedInput[1]);
                         break;
-                    case "Filter":
+                    case "FilterPlace":
                         FilterPlace(splittedInput[1], splittedInput[2]);
                         break;
                     case "Info":
