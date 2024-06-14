@@ -1,10 +1,19 @@
-CreateList Summer
-AddEvent SpeedItUp Varna 01.07.2024 Meeting Ivan_Ivanov Summer
-AddEvent Raise Varna 07.07.2024 Meeting Ivan_Ivanov Summer
-AddEvent Event7 Varna 04.07.2024 Meeting Ivan_Ivanov Summer
-AddEvent Raise Plovdiv 01.07.2024 Meeting Ivan_Ivanov Summer
-AddEvent Event9 Plovdiv 20.07.2024 Meeting Ivan_Ivanov Summer
-AddEvent Event5 Varna 01.07.2024 Meeting Ivan_Ivanov Summer
-AddEvent Raise Varna 01.06.2024 Meeting Ivan_Ivanov Summer
-AddEvent Event3 Plovdiv 01.07.2024 Meeting Ivan_Ivanov Summer
-AddEvent SpeedItUp Varna 01.09.2024 Meeting Ivan_Ivanov Summer
+CreateList ListOfEvents
+AddEvent SpeedItUp Varna 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Raise Varna 07.06.2024 Conferency Ivan_Ivanov ListOfEvents
+AddEvent Event7 Varna 04.08.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Raise Plovdiv 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Event9 Plovdiv 20.07.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Event5 Varna 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Raise Varna 01.06.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Event3 Plovdiv 01.08.2024 Conferency Ivan_Ivanov ListOfEvents
+AddEvent SpeedItUp Varna 01.09.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent SpeedItUp Varna 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Raise Varna 07.07.2024 Conferency Ivan_Ivanov ListOfEvents
+AddEvent Event8 Varna 04.06.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Raise Plovdiv 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Event9 Plovdiv 20.06.2024 Conferency Ivan_Ivanov ListOfEvents
+AddEvent Event4 Varna 01.08.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Raise Varna 01.06.2024 Meeting Ivan_Ivanov ListOfEvents
+AddEvent Event3 Plovdiv 01.07.2024 Conferency Ivan_Ivanov ListOfEvents
+AddEvent SpeedItUp Varna 01.09.2024 Meeting Ivan_Ivanov ListOfEvents
