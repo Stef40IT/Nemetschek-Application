@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,26 +38,57 @@ namespace ITEvents
         public List<Event> SortAscendingByName()
         {
             this._events.Sort((x, y) => string.Compare(x.EventName, y.EventName));
-            return this._events;
+
+            var devBitesList = new List<Event>();
+            var otherList = new List<Event>();
+
+            
+            foreach (var e in this._events)
+            {
+                if (e.EventName.Contains("Dev Bites"))
+                    devBitesList.Add(e);
+
+                else otherList.Add(e); 
+            }
+            devBitesList.AddRange(otherList);
+            return devBitesList;
         }
+
+
         public List<Event> SortDescendingByName()
         {
             this._events.Sort((x, y) => string.Compare(y.EventName, x.EventName));
-            return this._events;
+
+            var devBitesList = new List<Event>();
+            var otherList = new List<Event>();
+
+
+            foreach (var e in this._events)
+            {
+                if (e.EventName.Contains("Dev Bites"))
+                    devBitesList.Add(e);
+
+                else otherList.Add(e);
+            }
+            devBitesList.AddRange(otherList);
+            return devBitesList;
         }
-        
-        public List<Event> FilterPlace(string place) =>this._events.Where(x => x.EventPlace == place).ToList();
+
+        public List<Event> FilterPlace(string place) =>  DevBites(this._events.Where(e => e.EventPlace == place).ToList());
         public List<Event> FilterDate(string date)
         {
+            List<Event> filteredEvent;
             if (int.TryParse(date, out int year)) 
-                return FilterByYear(year);
-            if (Enum.TryParse(date, true, out Season season))
-                return FilterBySeason(season);
-            if (DateTime.TryParseExact(date, "MMMM", System.Globalization.CultureInfo.InvariantCulture, 
+                filteredEvent = FilterByYear(year);
+            else if (Enum.TryParse(date, true, out Season season))
+                filteredEvent = FilterBySeason(season);
+            else if (DateTime.TryParseExact(date, "MMMM", System.Globalization.CultureInfo.InvariantCulture, 
                 System.Globalization.DateTimeStyles.None, out DateTime month))
-                return FilterByMonth(month.Month);
-            throw new ArgumentException("Invalid date format. Please use month name, year, or season.");
+                filteredEvent = FilterByMonth(month.Month);
+            else throw new ArgumentException("Invalid date format. Please use month name, year, or season.");
+            return DevBites(filteredEvent);
         }
+        public List<Event> FilterType(string type) => DevBites(this._events.Where(e => e.EventType == type).ToList());
 
         private List<Event> FilterByYear(int year) => this._events.Where(e => e.Date.Year == year).ToList();
         private List<Event> FilterByMonth(int month) => this._events.Where(e => e.Date.Month == month).ToList();
@@ -72,6 +104,15 @@ namespace ITEvents
                 sb.AppendLine(events.ToString());
 
             return sb.ToString().Trim();
+        }
+
+        private List<Event> DevBites(List<Event> events)
+        {
+            var devBitesEvents = events.Where(e => e.EventName.Contains("Dev Bites", StringComparison.OrdinalIgnoreCase)).ToList();
+            var otherEvents = events.Where(e => !e.EventName.Contains("Dev Bites", StringComparison.OrdinalIgnoreCase)).ToList();
+
+            devBitesEvents.AddRange(otherEvents);
+            return devBitesEvents;
         }
         public enum Season
         {

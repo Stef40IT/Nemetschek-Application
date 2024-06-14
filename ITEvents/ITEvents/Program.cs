@@ -25,13 +25,13 @@ namespace ITEvents
             while ((input = Console.ReadLine()) != "STOP")
             {
                 
-                string[] splittedInput = input.Split(' ');
+                string[] splittedInput = input.Split(new string[] { ", " }, StringSplitOptions.None);
                 string command = splittedInput[0];
 
                 if (commands.ContainsKey(command)) commands[command](splittedInput);
                 else Console.WriteLine("Command Invalid!");
                 Console.WriteLine("Use one of the following commands: ");
-                Console.WriteLine("    AddEvent(name, place, date, type, lectors(Firstname_Lastname), event list)");
+                Console.WriteLine("    AddEvent(name, place, date, type, lectors, event list)");
                 Console.WriteLine("    Sort(Name, Ascending/Descending, event list)");
                 Console.WriteLine("    Filter(criterias(place, data, type, lector), filter, event list)");
 
@@ -55,7 +55,8 @@ namespace ITEvents
         {
             filters["Place"] = FilterPlace;
             filters["Date"] = FilterDate;
-            //filters["Type"] = FilterType;
+            filters["Type"] = FilterType;
+
         }
 
         
@@ -175,7 +176,7 @@ namespace ITEvents
             }
             return filteredList;
         }
-        /*private static EventList FilterType(EventList eventList, string[] args)
+        private static EventList FilterType(EventList eventList, string[] args)
         {
             string type = args[0];
             EventList filteredList = new EventList(eventList.Name);
@@ -185,6 +186,8 @@ namespace ITEvents
                 filteredList.AddEvent(e);
             }
             return filteredList;
-        }*/
+        }
+        
+
     }
 }

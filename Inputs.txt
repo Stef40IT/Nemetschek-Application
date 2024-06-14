@@ -1,19 +1,37 @@
-CreateList ListOfEvents
-AddEvent SpeedItUp Varna 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Raise Varna 07.06.2024 Conferency Ivan_Ivanov ListOfEvents
-AddEvent Event7 Varna 04.08.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Raise Plovdiv 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Event9 Plovdiv 20.07.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Event5 Varna 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Raise Varna 01.06.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Event3 Plovdiv 01.08.2024 Conferency Ivan_Ivanov ListOfEvents
-AddEvent SpeedItUp Varna 01.09.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent SpeedItUp Varna 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Raise Varna 07.07.2024 Conferency Ivan_Ivanov ListOfEvents
-AddEvent Event8 Varna 04.06.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Raise Plovdiv 01.07.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Event9 Plovdiv 20.06.2024 Conferency Ivan_Ivanov ListOfEvents
-AddEvent Event4 Varna 01.08.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Raise Varna 01.06.2024 Meeting Ivan_Ivanov ListOfEvents
-AddEvent Event3 Plovdiv 01.07.2024 Conferency Ivan_Ivanov ListOfEvents
-AddEvent SpeedItUp Varna 01.09.2024 Meeting Ivan_Ivanov ListOfEvents
+CreateList, ListOfEvents
+AddEvent, SpeedItUp Dev Bites, Varna, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise, Varna, 07.06.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, Event7, Varna, 04.08.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise, Plovdiv, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event9 Dev Bites, Plovdiv, 20.10.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event5, Varna, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise  Dev Bites, Varna, 01.06.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event3, Plovdiv, 01.08.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, SpeedItUp, Varna, 01.09.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, SpeedItUp, Varna, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise, Varna, 07.07.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, Event8, Varna, 04.06.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise, Plovdiv, 01.09.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event9, Plovdiv, 20.06.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, Event4 Dev Bites, Varna, 01.08.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise, Varna, 01.06.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event3, Plovdiv, 01.09.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, SpeedItUp, Varna, 01.09.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, SpeedItUp Dev Bites, Varna, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise, Varna, 07.06.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, Event7, Varna, 04.08.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise Dev Bites, Plovdiv, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event9 Dev Bites, Plovdiv, 20.09.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event5, Varna, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise Dev Bites, Varna, 01.06.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event3, Plovdiv, 01.10.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, SpeedItUp, Varna, 01.09.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, SpeedItUp, Varna, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise Dev Bites, Varna, 07.07.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, Event8, Varna, 04.06.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise, Plovdiv, 01.07.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event9 Dev Bites, Plovdiv, 20.10.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, Event4, Varna, 01.08.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Raise, Varna, 01.06.2024, Meeting, Ivan Ivanov, ListOfEvents
+AddEvent, Event3 Dev Bites, Plovdiv, 01.07.2024, Conferency, Ivan Ivanov, ListOfEvents
+AddEvent, SpeedItUp, Varna, 01.09.2024, Meeting, Ivan Ivanov, ListOfEvents
