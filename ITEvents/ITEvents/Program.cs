@@ -54,7 +54,7 @@ namespace ITEvents
         static void InitializeFilter()
         {
             filters["Place"] = FilterPlace;
-            filters["Data"] = FilterDate;
+            filters["Date"] = FilterDate;
             //filters["Type"] = FilterType;
         }
 
@@ -113,6 +113,7 @@ namespace ITEvents
                 Console.WriteLine($"Could not get list {eventListName}.");
                 return;
             }
+
             EventList eventList = eventsList[eventListName];
 
             if (sortField.Equals("Name"))
